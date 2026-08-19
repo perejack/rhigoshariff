@@ -1,0 +1,14 @@
+{
+  "name": "rhinggo-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rhinggo Energy Official Website",
+  "main": "api/apply.js",
+  "scripts": {
+    "start": "python -m http.server 8000"
+  },
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "nodemailer": "^6.9.16"
+  }
+}

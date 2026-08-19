@@ -1,0 +1,1719 @@
+/* =========================================
+   RHINGGO ENERGY - HOMEPAGE CSS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   TOP BAR
+========================================= */
+
+.top-bar {
+    height: 50px;
+    background: #19B419;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    padding: 0 5%;
+}
+
+
+/* =========================================
+   SOCIAL MEDIA
+========================================= */
+
+.social-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #b7f5ce;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.top-contact {
+    position: absolute;
+    right: 5%;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.top-contact a {
+    color: white;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    transition: 0.3s;
+}
+
+.top-contact a:hover {
+    color: #b7f5ce;
+}
+
+.top-contact i {
+    font-size: 11px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+header {
+    background: white;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    min-height: 80px;
+
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.logo {
+    width: 170px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+
+    display: block;
+
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+
+/* =========================================
+   NAV MENU
+========================================= */
+
+.nav-menu {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    list-style: none;
+
+    flex: 1;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu > li > a {
+    display: block;
+
+    padding: 13px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+.nav-menu > li > a:hover,
+.nav-menu > li.active > a {
+    background: #19B419;
+    color: white;
+}
+
+
+/* =========================================
+   DROPDOWN
+========================================= */
+
+.dropdown {
+    position: absolute;
+
+    top: 48px;
+    left: 0;
+
+    min-width: 220px;
+
+    background: white;
+
+    padding: 10px 0;
+
+    border-radius: 8px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: 0.25s;
+}
+
+.nav-menu li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.dropdown a {
+    display: block;
+
+    padding: 12px 18px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.dropdown a:hover {
+    background: #eef8f2;
+    color: #19B419;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #19B419;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #149d14;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #19B419;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 12px 16px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+    font-size: 16px;
+
+    background: #25D366;
+    color: white;
+
+    transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+    background: #128C7E;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    position: relative;
+
+    min-height: 900px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    overflow: hidden;
+
+    background: #111;
+
+    color: white;
+}
+
+
+/* =========================================
+   HERO VIDEO
+========================================= */
+
+.hero video {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 1;
+
+    opacity: 1;
+
+    transition: opacity 1.2s ease-in-out;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   HERO IMAGE SLIDESHOW
+
+   IMPORTANT:
+   Images sit behind the video initially.
+   When video ends, JavaScript changes
+   opacity and the images become visible.
+========================================= */
+
+.hero-slideshow {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition: opacity 1.2s ease-in-out;
+}
+
+
+/* Individual images */
+
+.hero-slideshow .slide {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity 1s ease-in-out,
+        visibility 1s ease-in-out;
+
+    z-index: 1;
+}
+
+
+/* Active image */
+
+.hero-slideshow .slide.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   HERO DARK OVERLAY
+========================================= */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+    position: relative;
+
+    z-index: 20;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    min-height: 420px;
+}
+
+
+/* =========================================
+   HERO INFORMATION SLIDES
+========================================= */
+
+.hero-info-slide {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    opacity: 0;
+
+    transform: translateY(15px);
+
+    transition:
+        opacity 1s ease-in-out,
+        transform 1s ease-in-out;
+
+    pointer-events: none;
+}
+
+.hero-info-slide.active {
+    position: relative;
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+}
+
+
+/* =========================================
+   HERO TAG
+========================================= */
+
+.hero-tag {
+    display: inline-block;
+
+    background: #19B419;
+
+    padding: 9px 18px;
+
+    border-radius: 25px;
+
+    font-size: 40px;
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   HERO HEADING
+========================================= */
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #19B419;
+}
+
+
+/* =========================================
+   HERO TEXT
+========================================= */
+
+.hero p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    max-width: 650px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   FLOATING CARD 1
+========================================= */
+
+.card-1 {
+    position: absolute;
+
+    top: 90px;
+    right: 15%;
+
+    width: 220px;
+    height: 310px;
+
+    background: #19B419;
+
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    z-index: 30;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+
+    animation: floatCard1 3.5s ease-in-out infinite;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+    cursor: pointer;
+}
+
+.card-1 h2 {
+    font-size: 35px;
+}
+
+.card-1 h3 {
+    font-size: 25px;
+}
+
+.card-1 p {
+    margin-top: 10px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   FLOATING CARD 2
+========================================= */
+
+.card-2 {
+    position: absolute;
+
+    bottom: 90px;
+    right: 15%;
+
+    width: 220px;
+    height: 310px;
+
+    background: #19B419;
+
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    z-index: 30;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+
+    animation: floatCard2 4s ease-in-out infinite;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+    cursor: pointer;
+}
+
+.card-2 h3 {
+    margin-top: 10px;
+
+    width: 100%;
+
+    font-size: 16px;
+
+    line-height: 1;
+}
+
+.card-2 h3 span {
+    display: flex;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-bottom: 18px;
+
+    gap: 8px;
+
+    color: white;
+}
+
+.card-2 p {
+    margin-top: 8px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   CHECK ICON
+========================================= */
+
+.check-icon {
+    width: 25px;
+    height: 25px;
+
+    min-width: 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    color: #19B419;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    font-weight: 900;
+
+    font-style: normal;
+
+    line-height: 1;
+
+    flex-shrink: 0;
+}
+
+.card-2 h3 span strong {
+    font-size: 16px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   CARD ANIMATIONS
+========================================= */
+
+@keyframes floatCard1 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes floatCard2 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(12px);
+    }
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.card-1:hover,
+.card-2:hover {
+    transform: translateY(-18px) scale(1.04);
+
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   QUICK INFORMATION CARDS
+========================================= */
+
+.quick-links {
+    width: 86%;
+
+    margin: -55px auto 70px;
+
+    position: relative;
+
+    z-index: 5;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    background: white;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.quick-card {
+    padding: 30px 22px;
+
+    text-align: center;
+
+    border-right: 1px solid #eee;
+
+    transition: 0.3s;
+}
+
+.quick-card:last-child {
+    border-right: none;
+}
+
+.quick-card:hover {
+    transform: translateY(-6px);
+}
+
+.quick-card img {
+    width: 65%;
+
+    height: 180px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0 auto 20px;
+}
+
+.quick-icon {
+    font-size: 32px;
+
+    margin-bottom: 12px;
+}
+
+.quick-card h3 {
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+.quick-card p {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   GENERAL SECTIONS
+========================================= */
+
+.section {
+    padding: 80px 7%;
+}
+
+.light-section {
+    background: #f5f8f6;
+}
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-title span {
+    color: #19B419;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+
+    margin-top: 10px;
+}
+
+.section-title p {
+    color: #777;
+
+    max-width: 650px;
+
+    margin: 15px auto 0;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.about-content span {
+    color: #19B419;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.about-content h2 {
+    font-size: 40px;
+
+    margin: 12px 0 20px;
+}
+
+.about-content p {
+    color: #000;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+.check-list {
+    list-style: none;
+
+    margin-bottom: 25px;
+}
+
+.check-list li {
+    margin: 12px 0;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.check-list li::before {
+    content: "✓";
+
+    color: #19B419;
+
+    font-weight: 900;
+
+    margin-right: 10px;
+}
+
+
+/* =========================================
+   PRODUCTS
+========================================= */
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+}
+
+.product-card img {
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+}
+
+.product-content {
+    padding: 25px;
+}
+
+.product-content h3 {
+    margin-bottom: 10px;
+}
+
+.product-content p {
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   WHY RHINGGO
+========================================= */
+
+.why-rhinggo {
+    background: #19B419;
+
+    color: white;
+
+    text-align: center;
+}
+
+.why-rhinggo .section-title span {
+    color: #9ff0bd;
+}
+
+.why-rhinggo .section-title p {
+    color: #d9f5e3;
+}
+
+.why-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.why-card {
+    padding: 30px 20px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 12px;
+}
+
+.why-card .icon {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #d9f5e3;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.cta {
+    padding: 80px 7%;
+
+    text-align: center;
+
+    background: #101814;
+
+    color: white;
+}
+
+.cta h2 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    color: #b9c5be;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #0a0f0c;
+
+    color: white;
+
+    padding: 60px 7% 20px;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
+    gap: 40px;
+
+    margin-bottom: 45px;
+}
+
+footer img {
+    width: 145px;
+
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    margin-bottom: 18px;
+}
+
+footer p,
+footer a {
+    color: #aab5ae;
+
+    font-size: 13px;
+
+    line-height: 2;
+}
+
+footer a:hover {
+    color: #19B419;
+}
+
+.footer-bottom {
+    border-top: 1px solid #28312c;
+
+    padding-top: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #77827b;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+.mobile-menu {
+    display: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .nav-menu > li > a {
+        padding: 11px 8px;
+
+        font-size: 11px;
+    }
+
+    .quick-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-1,
+    .card-2 {
+        right: 5%;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .top-bar {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 70px;
+
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    .logo img {
+        width: 160px;
+
+        padding-top: 10px;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .navbar > .btn-primary {
+        display: none;
+    }
+
+
+    /* Mobile navigation */
+
+    .nav-menu {
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        box-shadow:
+            0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu > li > a {
+        padding: 15px 25px;
+
+        border-radius: 0;
+    }
+
+
+    /* Mobile dropdown */
+
+    .dropdown {
+        position: static;
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: none;
+
+        display: none;
+
+        box-shadow: none;
+
+        border-radius: 0;
+
+        padding-left: 20px;
+    }
+
+    .nav-menu li:hover .dropdown {
+        display: block;
+    }
+
+
+    /* =====================================
+       MOBILE HERO
+    ===================================== */
+
+    .hero {
+        min-height: 650px;
+
+        padding: 60px 6%;
+    }
+
+    .hero-content {
+        min-height: 450px;
+
+        max-width: 100%;
+    }
+
+    .hero-tag {
+        font-size: 22px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+
+    /* Hide floating cards */
+
+    .card-1,
+    .card-2 {
+        display: none;
+    }
+
+
+    /* Sections */
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .hero {
+        min-height: 600px;
+
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-tag {
+        font-size: 18px;
+
+        padding: 8px 14px;
+    }
+
+    .hero p {
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .hero-buttons .btn {
+        font-size: 14px;
+
+        padding: 12px 18px;
+    }
+
+
+    .quick-links {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        margin-top: -30px;
+    }
+
+    .quick-card {
+        border-right: none;
+
+        border-bottom: 1px solid #eee;
+    }
+
+
+    .section {
+        padding: 50px 6%;
+    }
+
+    .section-title h2,
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+}
+
+
+/* =========================================
+   RHINGGO ENERGY MARKET IMPACT
+========================================= */
+
+.rhinggo-impact {
+    width: 100%;
+
+    background: #f5f8f6;
+
+    padding: 80px 7% 85px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TOP ACCENT LINE
+========================================= */
+
+.rhinggo-impact::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #19B419;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.impact-container {
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.impact-heading {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.impact-heading h2 {
+    margin: 0 0 18px;
+
+    color: #222;
+
+    font-size: clamp(34px, 4vw, 48px);
+
+    font-weight: 700;
+
+    line-height: 1.15;
+}
+
+.impact-heading h2::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    background: #19B419;
+
+    margin: 18px auto 0;
+
+    border-radius: 10px;
+}
+
+.impact-heading p {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: #777;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   IMPACT GRID
+========================================= */
+
+.impact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 0;
+
+    background: white;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   IMPACT ITEM
+========================================= */
+
+.impact-item {
+    padding: 35px 25px;
+
+    text-align: center;
+
+    min-height: 230px;
+
+    border-right: 1px solid #e8e8e8;
+
+    border-bottom: 1px solid #e8e8e8;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.impact-item:nth-child(4n) {
+    border-right: none;
+}
+
+.impact-item:nth-child(n + 5) {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.impact-item:hover {
+    background: #fbfffc;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   BIG NUMBER
+========================================= */
+
+.impact-number {
+    color: #19B419;
+
+    font-size: 36px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    margin-bottom: 15px;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================
+   ITEM TITLE
+========================================= */
+
+.impact-item h3 {
+    color: #222;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   ITEM DESCRIPTION
+========================================= */
+
+.impact-item p {
+    max-width: 250px;
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   IMPACT TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .rhinggo-impact {
+        padding: 70px 5%;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .impact-item:nth-child(4n) {
+        border-right: 1px solid #e8e8e8;
+    }
+
+    .impact-item:nth-child(2n) {
+        border-right: none;
+    }
+
+    .impact-item:nth-child(n + 5) {
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    .impact-item:nth-child(n + 7) {
+        border-bottom: none;
+    }
+}
+
+
+/* =========================================
+   IMPACT MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .rhinggo-impact {
+        padding: 55px 5%;
+    }
+
+    .impact-heading {
+        margin-bottom: 35px;
+    }
+
+    .impact-heading h2 {
+        font-size: 32px;
+    }
+
+    .impact-heading p {
+        font-size: 13px;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-item,
+    .impact-item:nth-child(2n),
+    .impact-item:nth-child(4n) {
+
+        border-right: none;
+
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    .impact-item:last-child {
+        border-bottom: none;
+    }
+
+    .impact-item {
+        min-height: auto;
+
+        padding: 32px 22px;
+    }
+
+    .impact-number {
+        font-size: 34px;
+    }
+}
+
+

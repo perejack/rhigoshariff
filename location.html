@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Our Locations | RhingGo Energy</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- Your CSS -->
+    <link rel="stylesheet"
+          href="location.css">
+
+          <!-- External JS -->
+    <script src="location.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="site-header">
+
+    <div class="navbar">
+
+        <a href="homepage.html"
+           class="logo">
+
+            <img src="images/LOGO ACID GREEN.png"
+                 alt="RhingGo Energy">
+
+        </a>
+
+
+        <nav class="main-nav">
+
+            <a href="homepage.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="location.html"
+               class="active">
+                Locations
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <a
+        href="https://wa.me/254703915999?text=Hello%20Rhinggo%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20electric%20mobility%20solutions."
+        class="whatsapp-button"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <span class="whatsapp-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+        </span>
+    
+        <span class="whatsapp-text">
+            <small>WhatsApp</small>
+        </span>
+    
+    </a>
+
+
+        <button class="mobile-menu"
+                id="mobileMenu"
+                aria-label="Open menu">
+
+            ☰
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     PAGE HERO WITH BACKGROUND VIDEO
+========================================= -->
+
+<section class="locations-hero">
+
+    <!-- Background Video -->
+    <video class="hero-video"
+           autoplay
+           muted
+           loop
+           playsinline>
+        <source src="videos/location-hero.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+
+        <span class="hero-label">
+            RHINGGO ENERGY
+        </span>
+
+        <h1>
+            Find Us Across Kenya
+        </h1>
+
+        <p>
+            Visit a RhingGo office for electric vehicle
+            demonstrations, sales support, service assistance,
+            financing consultations and battery swapping.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     MAIN LOCATION SECTION
+========================================= -->
+
+<section class="locations-section">
+
+    <div class="section-heading">
+
+        <span>
+            OUR NETWORK
+        </span>
+
+        <h2>
+            Branches & Swap Stations
+        </h2>
+
+        <p>
+            Find the nearest RhingGo office and get
+            the support you need to keep moving.
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================
+         SEARCH / FILTER
+    ====================================== -->
+
+    <div class="location-tools">
+
+        <div class="search-box">
+
+            <svg
+                class="search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true">
+        
+                <path
+                    d="M21 21l-4.35-4.35m2.1-5.4a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                </path>
+        
+            </svg>
+        
+            <input
+                type="text"
+                id="locationSearch"
+                placeholder="Search location..."
+                autocomplete="off"
+            >
+        
+        </div>
+
+
+        <div class="filter-buttons">
+
+            <button
+                class="filter-btn active"
+                data-filter="all">
+
+                All Locations
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="branch">
+
+                Branches
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="swap">
+
+                Swap Stations
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+   <!-- =========================================
+     RHINGGO SWAP STATION MAP
+========================================= -->
+
+<div class="map-wrapper google-map-wrapper" id="swap-stations">
+
+    <div class="map-header">
+
+        <div>
+            <span>RHINGGO NETWORK</span>
+
+            <h3>
+                Our Swap Stations
+            </h3>
+        </div>
+
+        <div class="map-status">
+            <span class="status-dot"></span>
+            Live Map
+        </div>
+
+    </div>
+
+
+    <div class="google-map">
+
+        <iframe
+            src="https://www.google.com/maps/d/embed?mid=188MGrfugSGCgALnMVH45RM79iTtyPKY&hl=en&ehbc=2E312F"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</div>
+
+
+    <!-- =====================================
+         LOCATION CARDS
+    ====================================== -->
+
+    <div class="locations-grid"
+         id="locationsGrid">
+
+
+        <!-- =================================
+             NAIROBI
+        ================================== -->
+
+        <article
+            class="location-card"
+            data-city="Nairobi"
+            data-type="both"
+            data-lat="-1.40"
+            data-lng="36.95">
+
+            <div class="card-top">
+
+                <span class="location-type">
+                    BRANCH + SWAP
+                </span>
+
+                <span class="status">
+                    ● OPEN
+                </span>
+
+            </div>
+
+
+            <div class="location-icon">
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true">
+            
+                    <path
+                        d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"/>
+            
+                    <circle
+                        cx="12"
+                        cy="9"
+                        r="2.5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"/>
+            
+                </svg>
+            
+            </div>
+
+
+            <h3>
+                Nairobi
+            </h3>
+
+            <p class="county">
+                Nairobi / Mavoko
+            </p>
+
+
+            <div class="location-detail">
+
+                <span class="detail-icon">
+            
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+            
+                        <path
+                            d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"/>
+            
+                        <circle
+                            cx="12"
+                            cy="9"
+                            r="2"
+                            fill="currentColor"/>
+            
+                    </svg>
+            
+                </span>
+            
+                <p>
+                    Mavoko Business Park,
+                    Mombasa Road,
+                    opposite Signature Mall
+                </p>
+            
+            </div>
+
+
+            <div class="location-detail">
+
+              
+
+                <p>
+                    Mon–Sat:
+                    8:30 AM – 5:30 PM
+                </p>
+
+            </div>
+
+
+            <div class="location-detail">
+
+
+                <p>
+                    Battery swapping available
+                </p>
+
+            </div>
+
+
+            <div class="card-actions">
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Mavoko+Business+Park+Signature+Mall+Kenya"
+                    target="_blank"
+                    rel="noopener"
+                    class="direction-btn">
+
+                    Get Directions
+
+                </a>
+
+                
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================
+             KISUMU
+        ================================== -->
+
+        <article
+            class="location-card"
+            data-city="Kisumu"
+            data-type="both"
+            data-lat="-0.0917"
+            data-lng="34.7680">
+
+            <div class="card-top">
+
+                <span class="location-type">
+                    BRANCH + SWAP
+                </span>
+
+                <span class="status">
+                    ● OPEN
+                </span>
+
+            </div>
+
+
+            <div class="location-icon">
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true">
+            
+                    <path
+                        d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"/>
+            
+                    <circle
+                        cx="12"
+                        cy="9"
+                        r="2.5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"/>
+            
+                </svg>
+            
+            </div>
+
+
+            <h3>
+                Kisumu
+            </h3>
+
+            <p class="county">
+                Kisumu County
+            </p>
+            
+           
+            
+            <div class="location-detail">
+            
+                <span class="detail-icon">
+            
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+            
+                        <path
+                            d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"/>
+            
+                        <circle
+                            cx="12"
+                            cy="9"
+                            r="2"
+                            fill="currentColor"/>
+            
+                    </svg>
+            
+                </span>
+            
+                <p>
+                    Obote Road,
+                    next to KCB Kisumu West,
+                    opposite CMC Motors
+                </p>
+            
+            </div>
+
+            <div class="location-detail">
+
+
+                <p>
+                    Mon–Sat:
+                    8:30 AM – 5:30 PM
+                </p>
+
+            </div>
+
+
+            <div class="location-detail">
+
+
+                <p>
+                    Battery swapping available
+                </p>
+
+            </div>
+
+
+            <div class="card-actions">
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Obote+Road+Kisumu+KCB+Kisumu+West"
+                    target="_blank"
+                    rel="noopener"
+                    class="direction-btn">
+
+                    Get Directions
+
+                </a>
+
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================
+             MOMBASA
+        ================================== -->
+
+        <article
+            class="location-card"
+            data-city="Mombasa"
+            data-type="both"
+            data-lat="-4.0619"
+            data-lng="39.6682">
+
+            <div class="card-top">
+
+                <span class="location-type">
+                    BRANCH + SWAP
+                </span>
+
+                <span class="status">
+                    ● OPEN
+                </span>
+
+            </div>
+
+
+            <div class="location-icon">
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true">
+            
+                    <path
+                        d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"/>
+            
+                    <circle
+                        cx="12"
+                        cy="9"
+                        r="2.5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"/>
+            
+                </svg>
+            
+            </div>
+
+
+            <h3>
+                Mombasa
+            </h3>
+            
+            <p class="county">
+                Mombasa County
+            </p>
+            
+           
+            
+            <div class="location-detail">
+            
+                <span class="detail-icon">
+            
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+            
+                        <path
+                            d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"/>
+            
+                        <circle
+                            cx="12"
+                            cy="9"
+                            r="2"
+                            fill="currentColor"/>
+            
+                    </svg>
+            
+                </span>
+            
+                <p>
+                    Ferry,<br>
+                    opposite Likoni Towers<br>
+                    End of Mbaraki Road.
+                </p>
+            
+            </div>
+            <div class="location-detail">
+
+             
+
+                <p>
+                    Mon–Sat:
+                    8:30 AM – 5:30 PM
+                </p>
+
+            </div>
+
+
+            <div class="location-detail">
+
+              
+
+                <p>
+                    Battery swapping available
+                </p>
+
+            </div>
+
+
+            <div class="card-actions">
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Ferry+Opposite+Likoni+Towers+Mombasa"
+                    target="_blank"
+                    rel="noopener"
+                    class="direction-btn">
+
+                    Get Directions
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================
+             MALINDI
+        ================================== -->
+
+        <article
+        class="location-card"
+        data-city="Malindi"
+        data-type="both"
+        data-lat="-3.2192"
+        data-lng="40.1169">
+    
+        <div class="card-top">
+    
+            <span class="location-type">
+                BRANCH + SWAP
+            </span>
+    
+            <span class="status">
+                ● OPEN
+            </span>
+    
+        </div>
+    
+    
+        <div class="location-icon">
+    
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true">
+    
+                <path
+                    d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"/>
+    
+                <circle
+                    cx="12"
+                    cy="9"
+                    r="2.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"/>
+    
+            </svg>
+    
+        </div>
+    
+    
+        <h3>
+            Malindi
+        </h3>
+    
+        <p class="county">
+            Kilifi County
+        </p>
+    
+    
+        <div class="location-detail">
+    
+            <span class="detail-icon">
+    
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24">
+    
+                    <path
+                        d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"/>
+    
+                    <circle
+                        cx="12"
+                        cy="9"
+                        r="2"
+                        fill="currentColor"/>
+    
+                </svg>
+    
+            </span>
+    
+            <p>
+                Near Mass Petrol Station,
+                opposite Mogo Office
+            </p>
+    
+        </div>
+    
+    
+        <div class="location-detail">
+    
+    
+            <p>
+                Mon–Sat:
+                8:30 AM – 5:30 PM
+            </p>
+    
+        </div>
+    
+    
+        <div class="location-detail">
+    
+    
+            <p>
+                Battery swapping available
+            </p>
+    
+        </div>
+    
+    
+        <div class="card-actions">
+    
+            <a
+                href="tel:+254741799919"
+                class="direction-btn">
+    
+                📞 Call Station
+    
+            </a>
+    
+           
+    
+        </div>
+    
+    </article>
+
+
+    <!-- NO RESULTS -->
+
+    <div class="no-results"
+         id="noResults">
+
+        <div>
+            🔎
+        </div>
+
+        <h3>
+            No location found
+        </h3>
+
+        <p>
+            Try searching for another city.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- =========================================
+     CONTACT CTA
+========================================= -->
+
+<section class="locations-cta">
+
+    <div>
+
+        <span>
+            READY TO GO ELECTRIC?
+        </span>
+
+        <h2>
+            Visit RhingGo Today
+        </h2>
+
+        <p>
+            Talk to our team about electric vehicles,
+            financing, servicing and battery swapping.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="tel:+25475172008"
+               class="cta-primary">
+
+                Call Us
+
+            </a>
+
+            <a href="mailto:Sales@rhinggo.com"
+               class="cta-outline">
+
+                Email Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+
+            <img
+                src="images/LOGO.png"
+                alt="RhingGo Energy"
+                class="footer-logo">
+
+            <p>
+                Smart electric mobility for Africa.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="homepage.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="location.html">
+                Locations
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Contact
+            </h4>
+
+            <p>
+                +254 751722008
+            </p>
+
+            <p>
+                Sales@rhinggo.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 RhingGo Energy Limited Kenya.
+        All rights reserved.
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

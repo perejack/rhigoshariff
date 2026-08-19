@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact Us | Rhinggo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER / NAVIGATION
+===================================================== -->
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <nav class="navigation">
+
+            <a href="homepage.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+
+        <!-- Mobile menu -->
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+
+    <!-- Mobile navigation -->
+
+    <nav
+        class="mobile-navigation"
+        id="mobileNavigation"
+    >
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About Us</a>
+
+        <a href="#products">Products</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO SECTION
+===================================================== -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <!-- Background image -->
+
+    <img
+        src="images/contact-bg.jpg"
+        alt=""
+        class="hero-background"
+    >
+
+
+    <!-- Overlay -->
+
+    <div class="hero-overlay"></div>
+
+
+    <!-- Hero content -->
+
+    <div class="hero-inner">
+
+
+        <h1>
+            Let's move
+            <span>
+                forward together.
+            </span>
+        </h1>
+
+
+        <p>
+            Have a question about electric mobility,
+            our vehicles, financing or becoming a partner?
+            Our team would love to hear from you.
+        </p>
+
+
+        <a
+            href="#contact"
+            class="hero-button"
+        >
+            TALK TO OUR TEAM
+
+            <i class="fa-solid fa-arrow-down"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT SECTION
+===================================================== -->
+
+<main
+    class="contact-page"
+    id="contact"
+>
+
+    <section class="contact-form-section">
+
+
+        <div class="form-inner">
+
+            <h2>
+                Client Enquiries
+            </h2>
+
+
+            <p class="form-intro">
+                Tell us a little about yourself and what
+                you're interested in. Fill out the form
+                and our team will get back to you.
+            </p>
+
+
+
+            <!-- =========================================
+                 FORM
+            ========================================== -->
+
+            <form id="contactForm">
+
+
+                <!-- FIRST + LAST NAME -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="firstName">
+                            First Name
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Your first name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="lastName">
+                            Last Name
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Your last name"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- PHONE + EMAIL -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+254 7XX XXX XXX"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- LOCATION -->
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Location
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        placeholder="City / County"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- INTEREST -->
+
+                <div class="form-group">
+
+                    <label for="interest">
+                        I'm interested in
+                        <span>*</span>
+                    </label>
+
+                    <select
+                        id="interest"
+                        name="interest"
+                        required
+                    >
+
+                        <option value="">
+                            Select an option
+                        </option>
+
+                        <option value="buying">
+                            Buying an electric tuk-tuk
+                        </option>
+
+                        <option value="financing">
+                            Financing
+                        </option>
+
+                        <option value="dealership">
+                            Dealership opportunity
+                        </option>
+
+                        <option value="battery">
+                            Battery swapping
+                        </option>
+
+                        <option value="partnership">
+                            Partnership
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                        <span>*</span>
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tell us how we can help..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- WHATSAPP -->
+
+                <div class="whatsapp-option">
+
+                    <input
+                        type="checkbox"
+                        id="whatsapp"
+                        name="whatsapp"
+                    >
+
+                    <label for="whatsapp">
+                        You can also contact me on WhatsApp
+                    </label>
+
+                </div>
+
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+
+                    <span>
+                        SEND INQUIRY
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <div
+                    id="formMessage"
+                    class="form-message"
+                ></div>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div>
+
+            <div class="footer-logo">
+                RHINGGO
+            </div>
+
+            <p>
+                Driving Africa toward a cleaner,
+                smarter electric future.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#products">Products</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            © 2026 Rhinggo.
+            All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
